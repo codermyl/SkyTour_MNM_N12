@@ -41,7 +41,8 @@
         </li>
         <li><a href="services">Dịch vụ</a></li>
         <li><a href="contact">Liên hệ</a></li>
-        <li><a href="login">Đăng nhập</a></li>
+        <li ><a href="login">{{app.isLoggin?'Đăng xuất':'Đăng nhập'}}</a></li>
+
       </ul>
 
       <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
@@ -66,10 +67,8 @@
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <p class="title-tou__p">THANH TOÁN</p>
-        <div class="owl-single dots-absolute owl-carousel">
+        <div class="">
           <img src="../../assets/images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
-          <img src="../../assets/images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
-          <img src="../../assets/images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
         </div>
 
       </div>

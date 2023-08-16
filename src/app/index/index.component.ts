@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AppServiceService } from '../app-service.service';
 
 @Component({
   selector: 'app-index',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    public app: AppServiceService
+  ) { }
 
   ngOnInit() {
+  }
+
+  search(){
+    this.router.navigate(['category'])
   }
 
 }
