@@ -9,14 +9,16 @@ export class RegisterComponent implements OnInit {
 
   email: string = '';
   password: string = '';
-
+  rePassword: string = '';
+  phone: string = '';
+  username: string = ''
   constructor() { }
 
   ngOnInit() {
   }
 
   handleLogin(){
-    
+
   }
 
 }
