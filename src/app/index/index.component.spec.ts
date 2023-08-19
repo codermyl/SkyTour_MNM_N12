@@ -5,6 +5,8 @@ import { DebugElement } from '@angular/core';
 
 import { IndexComponent } from './index.component';
 
+
+
 describe('IndexComponent', () => {
   let component: IndexComponent;
   let fixture: ComponentFixture<IndexComponent>;

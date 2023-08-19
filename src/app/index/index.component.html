@@ -62,8 +62,7 @@
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="intro-wrap">
-            <h1 class="mb-5"><span class="d-block">Cùng nhau trải nghiệm </span> những chuyến đi <span
-                class="typed-words"></span></h1>
+            <h1 class="mb-5"><span class="d-block">Cùng nhau trải nghiệm </span> những chuyến đi <span #typedMessage>{{typedMessageElement}}</span> </h1>
 
             <div class="row">
               <div class="col-12">
@@ -71,13 +70,13 @@
                   <div class="row mb-2">
                     <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
                       <!-- <input type="text" class="form-control" name="daterange"> -->
-                      <select name="" id="province" class="form-control custom-select">
+                      <select name="" id="province" class="form-control custom-select"   >
                         <option value="">Điểm xuất phát</option>
                         <option value="All">Tất cả</option>
                         <option value="HaNoi">Hà Nội</option>
                         <option value="DaNang">Đà Nẵng</option>
                         <option value="HoChiMinh">Hồ Chí Minh</option>
-                        <option value="HoChiMinh">Hạ Long</option>
+                        <option value="HaiPhong">Hải Phòng</option>
                       </select>
                     </div>
                     <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-6">
@@ -174,237 +173,14 @@
         </div>
         <div class="col-lg-5">
           <div class="slides">
-            <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid active">
-            <img src="../assets/images/hero-slider-2.jpg" alt="Image" class="img-fluid">
-            <img src="../assets/images/hero-slider-3.jpg" alt="Image" class="img-fluid">
-            <img src="../assets/images/hero-slider-4.jpg" alt="Image" class="img-fluid">
-            <img src="../assets/images/hero-slider-5.jpg" alt="Image" class="img-fluid">
+            <img src="{{images[activeIndex]}}" alt="Image" class="img-fluid active">
+            
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="untree_co-section" style="padding-top: 0px;">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <h2 class="title-tour-sale-main section-title mb-4 aos-init"
-            style="font-weight: bold; font-size: 45px !important;" data-aos="fade-right"
-            data-aos-duration="1200">Tours hot giá
-            sốc</h2>
-          <p class="content-tour-sale-main aos-init" data-aos="fade-up" data-aos-duration="1000">Cập nhật
-            hàng
-            ngày các tour được hỗ trợ với mức giá
-            hấp dẫn</p>
-          <div class="owl-single dots-absolute owl-carousel owl-theme owl-bs main-carousel">
-            <div class="item wrapper-img-tourhot img-fluid rounded-20">
-              <img src="../assets/images/slider-1.jpg" alt="ảnh Sky" class="img-fluid rounded-20">
-              <div class="wrapper-img-background" >
-                <h3 class="text-center">TOUR QUẢNG BÌNH</h3>
-                <p class="tour-sale-p1">3 NGÀY 2 ĐÊM</p>
-                <p class="tour-sale-p2">QUẢNG BÌNH – ĐỘNG PHONG NHA – ĐỘNG THIÊN ĐƯỜNG – SUỐI NƯỚC
-                  MỌOC
-                  – SÔNG CHÀY – HANG TỐI – CỒN CÁT QUANG PHÚ</p>
-                <p class="tour-sale-p3">Khởi hành: Các ngày trong tuần <span
-                    class="tour-sale-span1">
-                    2,390,000 đ</span><span class="tour-sale-span2">2,590,000 đ</span></p>
-                <a href="detail" class="btn-detail-tour-sale btn">Xem chi tiết</a>
-              </div>
-            </div>
-            <div class="item wrapper-img-tourhot img-fluid rounded-20" >
-              <img src="../assets/images/slider-2.jpg" alt="ảnh Sky" class="img-fluid rounded-20">
-              <div class="wrapper-img-background">
-                <h3 class="text-center">TOUR QUẢNG BÌNH</h3>
-                <p class="tour-sale-p1">3 NGÀY 2 ĐÊM</p>
-                <p class="tour-sale-p2">QUẢNG BÌNH – ĐỘNG PHONG NHA – ĐỘNG THIÊN ĐƯỜNG – SUỐI NƯỚC
-                  MỌOC
-                  – SÔNG CHÀY – HANG TỐI – CỒN CÁT QUANG PHÚ</p>
-                <p class="tour-sale-p3">Khởi hành: Các ngày trong tuần <span
-                    class="tour-sale-span1">
-                    2,390,000 đ</span><span class="tour-sale-span2">2,590,000 đ</span></p>
-                <a href="detail" class="btn-detail-tour-sale btn">Xem chi tiết</a>
-              </div>
-            </div>
-
-            <div class="item wrapper-img-tourhot img-fluid rounded-20">
-              <img src="../assets/images/slider-3.jpg" alt="ảnh Sky" class="img-fluid rounded-20">
-              <div class="wrapper-img-background">
-                <h3 class="text-center">TOUR QUẢNG BÌNH</h3>
-                <p class="tour-sale-p1">3 NGÀY 2 ĐÊM</p>
-                <p class="tour-sale-p2">QUẢNG BÌNH – ĐỘNG PHONG NHA – ĐỘNG THIÊN ĐƯỜNG – SUỐI NƯỚC
-                  MỌOC
-                  – SÔNG CHÀY – HANG TỐI – CỒN CÁT QUANG PHÚ</p>
-                <p class="tour-sale-p3">Khởi hành: Các ngày trong tuần <span
-                    class="tour-sale-span1">
-                    2,390,000 đ</span><span class="tour-sale-span2">2,590,000 đ</span></p>
-                <a href="detail" class="btn-detail-tour-sale btn">Xem chi tiết</a>
-              </div>
-            </div>
-            <div class="item wrapper-img-tourhot img-fluid rounded-20">
-              <img src="../assets/images/slider-4.jpg" alt="ảnh Sky" class="img-fluid rounded-20">
-              <div class="wrapper-img-background">
-                <h3 class="text-center">TOUR QUẢNG BÌNH</h3>
-                <p class="tour-sale-p1">3 NGÀY 2 ĐÊM</p>
-                <p class="tour-sale-p2">QUẢNG BÌNH – ĐỘNG PHONG NHA – ĐỘNG THIÊN ĐƯỜNG – SUỐI NƯỚC
-                  MỌOC
-                  – SÔNG CHÀY – HANG TỐI – CỒN CÁT QUANG PHÚ</p>
-                <p class="tour-sale-p3">Khởi hành: Các ngày trong tuần <span
-                    class="tour-sale-span1">
-                    2,390,000 đ</span><span class="tour-sale-span2">2,590,000 đ</span></p>
-                <a href="detail" class="btn-detail-tour-sale btn">Xem chi tiết</a>
-              </div>
-            </div>
-            <div class="item wrapper-img-tourhot img-fluid rounded-20">
-              <img src="../assets/images/slider-5.jpg" alt="ảnh Sky" class="img-fluid rounded-20">
-              <div class="wrapper-img-background">
-                <h3 class="text-center">TOUR QUẢNG BÌNH</h3>
-                <p class="tour-sale-p1">3 NGÀY 2 ĐÊM</p>
-                <p class="tour-sale-p2">QUẢNG BÌNH – ĐỘNG PHONG NHA – ĐỘNG THIÊN ĐƯỜNG – SUỐI NƯỚC
-                  MỌOC
-                  – SÔNG CHÀY – HANG TỐI – CỒN CÁT QUANG PHÚ</p>
-                <p class="tour-sale-p3">Khởi hành: Các ngày trong tuần <span
-                    class="tour-sale-span1">
-                    2,390,000 đ</span><span class="tour-sale-span2">2,590,000 đ</span></p>
-                <a href="detail" class="btn-detail-tour-sale btn">Xem chi tiết</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7 pl-lg-5 ml-auto" style="margin-top: 135px;">
-          <div class="owl-carousel owl-carousel owl-3-slider second-carousel">
-            <div class="item item-tour-sale">
-              <a class="media-thumb" href="detail">
-                <div class="media-text media-text-tour-sale">
-                  <h3>3,450,000 đ</h3>
-                  <span class="location">4,450,000 đ</span>
-                  <p style="margin-top: 16px;">ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN – BÀ NÀ HILLS - CÙ
-                    LAO
-                    CHÀM</p>
-                  <p>4 ngày 3 đêm</p>
-                  <p>Khởi hành: Các ngày trong tuần</p>
-                  <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
-                    (Click
-                    xem chi tiết)</p>
-                </div>
-                <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="tour-name-sale">
-                <h5 class="text-center">Tour</h5>
-                <p class="text-center">QUY NHƠN – PHÚ YÊN</p>
-              </div>
-            </div>
-            <div class="item item-tour-sale">
-              <a class="media-thumb" href="detail">
-                <div class="media-text media-text-tour-sale">
-                  <h3>3,450,000 đ</h3>
-                  <span class="location">4,450,000 đ</span>
-                  <p style="margin-top: 16px;">ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN – BÀ NÀ HILLS - CÙ
-                    LAO
-                    CHÀM</p>
-                  <p>4 ngày 3 đêm</p>
-                  <p>Khởi hành: Các ngày trong tuần</p>
-                  <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
-                    (Click
-                    xem chi tiết)</p>
-                </div>
-                <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="tour-name-sale">
-                <h5 class="text-center">Tour</h5>
-                <p class="text-center">QUY NHƠN – PHÚ YÊN</p>
-              </div>
-            </div>
-            <div class="item item-tour-sale">
-              <a class="media-thumb" href="detail">
-                <div class="media-text media-text-tour-sale">
-                  <h3>3,450,000 đ</h3>
-                  <span class="location">4,450,000 đ</span>
-                  <p style="margin-top: 16px;">ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN – BÀ NÀ HILLS - CÙ
-                    LAO
-                    CHÀM</p>
-                  <p>4 ngày 3 đêm</p>
-                  <p>Khởi hành: Các ngày trong tuần</p>
-                  <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
-                    (Click
-                    xem chi tiết)</p>
-                </div>
-                <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="tour-name-sale">
-                <h5 class="text-center">Tour</h5>
-                <p class="text-center">QUY NHƠN – PHÚ YÊN</p>
-              </div>
-            </div>
-            <div class="item item-tour-sale">
-              <a class="media-thumb" href="detail">
-                <div class="media-text media-text-tour-sale">
-                  <h3>3,450,000 đ</h3>
-                  <span class="location">4,450,000 đ</span>
-                  <p style="margin-top: 16px;">ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN – BÀ NÀ HILLS - CÙ
-                    LAO
-                    CHÀM</p>
-                  <p>4 ngày 3 đêm</p>
-                  <p>Khởi hành: Các ngày trong tuần</p>
-                  <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
-                    (Click
-                    xem chi tiết)</p>
-                </div>
-                <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="tour-name-sale">
-                <h5 class="text-center">Tour</h5>
-                <p class="text-center">QUY NHƠN – PHÚ YÊN</p>
-              </div>
-            </div>
-            <div class="item item-tour-sale">
-              <a class="media-thumb" href="detail">
-                <div class="media-text media-text-tour-sale">
-                  <h3>3,450,000 đ</h3>
-                  <span class="location">4,450,000 đ</span>
-                  <p style="margin-top: 16px;">ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN – BÀ NÀ HILLS - CÙ
-                    LAO
-                    CHÀM</p>
-                  <p>4 ngày 3 đêm</p>
-                  <p>Khởi hành: Các ngày trong tuần</p>
-                  <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
-                    (Click
-                    xem chi tiết)</p>
-                </div>
-                <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="tour-name-sale">
-                <h5 class="text-center">Tour</h5>
-                <p class="text-center">QUY NHƠN – PHÚ YÊN</p>
-              </div>
-            </div>
-            <div class="item item-tour-sale">
-              <a class="media-thumb" href="detail">
-                <div class="media-text media-text-tour-sale">
-                  <h3>3,450,000 đ</h3>
-                  <span class="location">4,450,000 đ</span>
-                  <p style="margin-top: 16px;">ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN – BÀ NÀ HILLS - CÙ
-                    LAO
-                    CHÀM</p>
-                  <p>4 ngày 3 đêm</p>
-                  <p>Khởi hành: Các ngày trong tuần</p>
-                  <p class="text-center" style="color: #ada9a9; font-size: 20px !important;">
-                    (Click
-                    xem chi tiết)</p>
-                </div>
-                <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="tour-name-sale">
-                <h5 class="text-center">Tour</h5>
-                <p class="text-center">QUY NHƠN – PHÚ YÊN cccccccccccccccccccccccccc</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
   </div>
   <div class="untree_co-section">
     <div class="container">
@@ -412,9 +188,9 @@
         <div class="col-lg-6 text-center">
           <h2 class="section-title text-center mb-3 aos-init title-tour-summer-main"
             style="font-size: 45px !important; font-weight: bold;" data-aos="fade-left"
-            data-aos-duration="1000">
+            >
             Tours du lịch hè 2023</h2>
-          <p class="aos-init content-tour-summer-main" data-aos="fade-up" data-aos-duration="1000">Thật tuyệt vời khi giao quyền sắp xếp tour du
+          <p class="aos-init content-tour-summer-main" data-aos="fade-up" >Thật tuyệt vời khi giao quyền sắp xếp tour du
             lịch và
             kết hợp nghỉ ngơi trong thời gian gần 1
             tháng cho SkyTour. Đặc biệt nhận được sự gần gũi, thân thiện, cảm giác như tình cảm gia đình
@@ -422,16 +198,16 @@
             VÔ GIÁ ). Hy vọng sẽ sớm gặp lại…</p>
         </div>
       </div>
-      <div class="row align-items-stretch aos-init list-tour-summer-main" data-aos="fade-right" data-aos-duration="1200">
+      <div class="row align-items-stretch aos-init list-tour-summer-main" data-aos="fade-right" >
         <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
           <div class="item item-search">
             <div class="media-thumb">
               <div class="media-text">
-                <h3><i class="fa-solid fa-money-bill"></i> Vé giá 300k / 1 người</h3>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
                   Quốc
                   Tử Giám - Làng Nghề Gốm Bát Tràng</p>
-                <a href="detail" class="btn btn-success btn-tour-item" style="margin-top: 30px;">Click để
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
                   xem
                   chi tiết</a>
               </div>
@@ -442,11 +218,11 @@
           <div class="item item-search">
             <div class="media-thumb">
               <div class="media-text">
-                <h3><i class="fa-solid fa-money-bill"></i> Vé giá 300k / 1 người</h3>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
                   Quốc
                   Tử Giám - Làng Nghề Gốm Bát Tràng</p>
-                <a href="detail" class="btn btn-success btn-tour-item" style="margin-top: 30px;">Click để
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
                   xem
                   chi tiết</a>
               </div>
@@ -459,11 +235,11 @@
           <div class="item item-search">
             <div class="media-thumb">
               <div class="media-text">
-                <h3><i class="fa-solid fa-money-bill"></i> Vé giá 300k / 1 người</h3>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
                   Quốc
                   Tử Giám - Làng Nghề Gốm Bát Tràng</p>
-                <a href="detail" class="btn btn-success btn-tour-item" style="margin-top: 30px;">Click để
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
                   xem
                   chi tiết</a>
               </div>
@@ -474,11 +250,11 @@
           <div class="item item-search">
             <div class="media-thumb">
               <div class="media-text">
-                <h3><i class="fa-solid fa-money-bill"></i> Vé giá 300k / 1 người</h3>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
                   Quốc
                   Tử Giám - Làng Nghề Gốm Bát Tràng</p>
-                <a href="detail" class="btn btn-success btn-tour-item" style="margin-top: 30px;">Click để
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
                   xem
                   chi tiết</a>
               </div>
@@ -490,11 +266,11 @@
           <div class="item item-search">
             <div class="media-thumb">
               <div class="media-text">
-                <h3><i class="fa-solid fa-money-bill"></i> Vé giá 300k / 1 người</h3>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
                   Quốc
                   Tử Giám - Làng Nghề Gốm Bát Tràng</p>
-                <a href="detail" class="btn btn-success btn-tour-item" style="margin-top: 30px;">Click để
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
                   xem
                   chi tiết</a>
               </div>
@@ -505,11 +281,11 @@
           <div class="item item-search">
             <div class="media-thumb">
               <div class="media-text">
-                <h3><i class="fa-solid fa-money-bill"></i> Vé giá 300k / 1 người</h3>
-                <p class="location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
                   Quốc
                   Tử Giám - Làng Nghề Gốm Bát Tràng</p>
-                <a href="#" class="btn btn-success btn-tour-item" style="margin-top: 30px;">Click để
+                <a href="#" class="btn btn-success btn-tour-item btn-click-tour" >Click để
                   xem
                   chi tiết</a>
               </div>
@@ -527,7 +303,7 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
           <div class="counter-wrap">
             <div class="counter">
-              <span class="" data-number="7313">0</span>
+              <span class="" data-number="7313">7313</span>
             </div>
             <span class="caption">Chuyến đi</span>
           </div>
@@ -535,7 +311,7 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
           <div class="counter-wrap">
             <div class="counter">
-              <span class="" data-number="8492">0</span>
+              <span class="" data-number="8492">8492</span>
             </div>
             <span class="caption">Lượt khách</span>
           </div>
@@ -543,7 +319,7 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
           <div class="counter-wrap">
             <div class="counter">
-              <span class="" data-number="100">0</span>
+              <span class="" data-number="100">100</span>
             </div>
             <span class="caption">Hướng dẫn viên chuyên nghiệp </span>
           </div>
@@ -551,7 +327,7 @@
         <div class="col-6 col-sm-6 col-md-6 col-lg-3">
           <div class="counter-wrap">
             <div class="counter">
-              <span class="" data-number="120">0</span>
+              <span class="" data-number="120">120</span>
             </div>
             <span class="caption">Tour có sẵn</span>
           </div>
@@ -562,42 +338,42 @@
 
 
 
-  <div class="untree_co-section">
+  <div >
     <div class="container">
       <div class="row text-center justify-content-center mb-5">
         <div class="col-lg-7">
           <h2 class="section-title text-center mb-3"
             style="font-size: 45px !important; font-weight: bold;" data-aos="fade-left"
-            data-aos-duration="1200">Điểm đến yêu thích</h2>
+            >Điểm đến yêu thích</h2>
         </div>
       </div>
 
-      <div class="owl-carousel owl-3-slider">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around; grid-gap: 32px;">
 
-        <div class="item" data-aos="fade-up" data-aos-duration="1000">
-          <a class="media-thumb" href="category">
-            <div class="media-text">
-            <h3>Du lịch Phú Quốc</h3>
+        <div  data-aos="fade-up" class="img-category" >
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+            <h3 class="tour-name tour-name-h3">Du lịch Phú Quốc</h3>
               <span class="location">Phú Quốc</span>
             </div>
             <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
 
-        <div class="item" data-aos="fade-up" data-aos-duration="1000">
-          <a class="media-thumb" href="category">
-            <div class="media-text">
-              <h3>Du lịch Hà Nội</h3>
+        <div  data-aos="fade-up" class="img-category" >
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Hà Nội</h3>
               <span class="location">Hà Nội</span>
             </div>
             <img src="../assets/images/hero-slider-2.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
 
-        <div class="item" data-aos="fade-up" data-aos-duration="1000">
-          <a class="media-thumb" href="category">
-            <div class="media-text">
-              <h3>Du lich Hội An</h3>
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lich Hội An</h3>
               <span class="location">Quảng Nam</span>
             </div>
             <img src="../assets/images/hero-slider-3.jpg" alt="Image" class="img-fluid">
@@ -605,30 +381,30 @@
         </div>
 
 
-        <div class="item" data-aos="fade-up" data-aos-duration="1000">
-          <a class="media-thumb" href="category">
-            <div class="media-text">
-              <h3>Du lịch Nha Trang</h3>
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Nha Trang</h3>
               <span class="location">Nha Trang</span>
             </div>
             <img src="../assets/images/hero-slider-4.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
 
-        <div class="item" data-aos="fade-up" data-aos-duration="1000">
-          <a class="media-thumb" href="category">
-            <div class="media-text">
-              <h3>Du lịch Ninh Bình</h3>
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Ninh Bình</h3>
               <span class="location">Ninh Bình</span>
             </div>
             <img src="../assets/images/hero-slider-5.jpg" alt="Image" class="img-fluid">
           </a>
         </div>
 
-        <div class="item" data-aos="fade-up" data-aos-duration="1200">
-          <a class="media-thumb" href="category">
-            <div class="media-text">
-              <h3>Du lịch Đà Nẵng</h3>
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Đà Nẵng</h3>
               <span class="location">Đà Nẵng</span>
             </div>
             <img src="../assets/images/hero-slider-2.jpg" alt="Image" class="img-fluid">
@@ -646,12 +422,12 @@
         <div class="col-lg-6">
           <h2 class="section-title text-center mb-3"
             style="font-weight: bold; font-size: 45px !important;" data-aos="fade-right"
-            data-aos-duration="1000">Ưu đãi đặc biệt &amp; Giảm giá</h2>
+            >Ưu đãi đặc biệt &amp; Giảm giá</h2>
           <p>Các tour đến tham qun du lịch Hà Nội, Nha Trang, Phú Quốc cho mùa hè này</p>
         </div>
       </div>
       <div class="row" data-aos="fade-right"
-      data-aos-duration="1200">
+      >
         <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
           <div class="media-1">
             <a href="#" class="d-block mb-3"><img src="../assets/images/hero-slider-1.jpg" alt="Image"
@@ -744,7 +520,7 @@
         <div class="col-lg-7 text-center">
           <h2 class="section-title text-center mb-5">Phản hồi</h2>
 
-          <div class="owl-single owl-carousel no-nav">
+          <div class="">
             <div class="testimonial mx-auto">
               <figure class="img-wrap">
                 <img src="../assets/images/person_2.jpg" alt="Image" class="img-fluid">
@@ -813,8 +589,8 @@
 
         <div class="col-lg-5">
           <h2 class="section-title text-left mb-4" style="font-weight: bold; font-size: 40px !important;"
-            data-aos="fade-right" data-aos-duration="1000">Hành trình cùng SkyTour</h2>
-          <p data-aos="fade-up" data-aos-duration="1200">Du lịch Việt Nam là một hành trình thú vị và đầy khám phá. Với những nét đẹp tự nhiên hùng
+            data-aos="fade-right" >Hành trình cùng SkyTour</h2>
+          <p data-aos="fade-up" >Du lịch Việt Nam là một hành trình thú vị và đầy khám phá. Với những nét đẹp tự nhiên hùng
             vĩ,
             văn hóa đa dạng và những trải nghiệm độc đáo, Việt Nam đã trở thành một điểm đến hấp dẫn cho
             các
@@ -822,13 +598,13 @@
             chuyên nghiệp sẽ giúp bạn khám phá và tìm hiểu tất cả những điều thú vị mà đất nước Việt Nam
             mang lại.</p>
 
-          <p data-aos="fade-up" data-aos-duration="1200" class="mb-4">Ngoài ra, các hướng dẫn viên của SkyTour còn giúp bạn giải đáp các thắc mắc và
+          <p data-aos="fade-up"  class="mb-4">Ngoài ra, các hướng dẫn viên của SkyTour còn giúp bạn giải đáp các thắc mắc và
             đưa
             ra những lời khuyên hữu ích về an toàn và các quy định địa phương. Họ cũng sẽ giúp bạn đàm
             phán
             với các nhà cung cấp dịch vụ và giải quyết các vấn đề nếu có.</p>
 
-          <ul data-aos="fade-up" data-aos-duration="1200" class="list-unstyled two-col clearfix">
+          <ul data-aos="fade-up"  class="list-unstyled two-col clearfix">
             <li>Hoạt động giải trí ngoài trời</li>
             <li>Hãng hàng không</li>
             <li>Cho thuê ô tô</li>
@@ -841,7 +617,7 @@
             <li>Sách hướng dẫn</li>
           </ul>
 
-          <p data-aos="fade-up" data-aos-duration="1200"><a href="#" class="btn btn-primary">Bắt đầu</a></p>
+          <p data-aos="fade-up" ><a href="#" class="btn btn-primary">Bắt đầu</a></p>
 
 
         </div>
