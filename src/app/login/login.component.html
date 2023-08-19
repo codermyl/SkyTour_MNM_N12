@@ -1,19 +1,19 @@
 <div class="body">
   <div class="login-form">
-    <h1>Login</h1>
+    <h1>Đăng nhập</h1>
     <form>
       <div class="form-group">
-        <label for="email">UserName</label>
+        <label for="email">Tên tài khoản</label>
         <input type="text" id="email" name="email" [(ngModel)]="email" required>
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">Mật khẩu</label>
         <input type="password" id="password" name="password" [(ngModel)]="password" required>
       </div>
-      <button type="button" (click)="handleLogin()">Login</button>
+      <button type="button" (click)="handleLogin()">Đăng nhập</button>
     </form>
     <div class="signup-link">
-      Don't have an account? <a href="register">Sign up</a>
+      <p style="color:#3498db">Bạn không có tài khoản?</p> <a href="register">Đăng ký</a>
     </div>
   </div>
 
