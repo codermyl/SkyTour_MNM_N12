@@ -10,6 +10,7 @@ import { AppServiceService } from '../app-service.service';
 
 
 
+
 export class DetailComponent implements OnInit {
 
   images = [
