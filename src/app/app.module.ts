@@ -14,6 +14,8 @@ import { CategoryComponent } from './category/category.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+imports:[HttpClientModule,  ]
 
 @NgModule({
   declarations: [					
@@ -24,7 +26,8 @@ import { CommonModule } from '@angular/common';
       LoginComponent,
       RegisterComponent,
       PayComponent,
-      ServicesComponent
+      ServicesComponent,
+    
    ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     FormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

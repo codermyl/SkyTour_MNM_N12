@@ -1,5 +1,7 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppServiceService } from '../app-service.service';
 
 @Component({
@@ -26,13 +28,17 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
   constructor(
     private router: Router,
-    public app: AppServiceService
+    public app: AppServiceService,
+    private http: HttpClient
   ) { }
 
   ngOnInit() {
     this.startTyping();
     this.startSlideshow();
+    this.getProductTours();
   }
+
+  tourName:string = ''
 
   ngAfterViewInit() {
     this.typedMessageElement.nativeElement.innerHTML = '';
@@ -40,7 +46,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
   search() {
     this.router.navigate(['category']);
-  }
+        }
 
   startTyping() {
     const typingSpeed = 200;
@@ -51,7 +57,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
         this.typedMessageElement.nativeElement.innerHTML += message[i];
       }, i * typingSpeed);
     }
-
+        
     this.messageIndex = (this.messageIndex + 1) % this.messages.length;
 
     setTimeout(() => {
@@ -69,4 +75,21 @@ export class IndexComponent implements OnInit, AfterViewInit {
   nextSlide() {
     this.activeIndex = (this.activeIndex + 1) % this.images.length;
   }
+
+  getProductTours(){
+    let request = {
+      pageNumber: 0,
+      pageSize: 0,
+      filter: {
+        productionTourName: this.tourName
+      }
+    }
+    this.http.post('http://localhost:8080/api/product-tours', request).subscribe({
+      next: (res : any)=>{
+        console.log(res);
+      },
+    
+    })
+  }
+
 }
