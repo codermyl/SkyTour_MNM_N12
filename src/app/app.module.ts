@@ -14,6 +14,8 @@ import { CategoryComponent } from './category/category.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CommonModule } from '@angular/common';
+import { DetailComponent } from './detail/detail.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [					
@@ -24,7 +26,9 @@ import { CommonModule } from '@angular/common';
       LoginComponent,
       RegisterComponent,
       PayComponent,
-      ServicesComponent
+      ServicesComponent,
+      DetailComponent,
+      ContactComponent,
    ],
   imports: [
     BrowserModule,

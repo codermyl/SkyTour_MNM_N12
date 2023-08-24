@@ -195,13 +195,13 @@
             <div class="col-6">
               <div class="form-group">
                 <label class="text-black" for="numberAdult">Người lớn</label>
-                <input type="number" class="form-control" id="numberAdult">
+                <input type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="person" (ngModelChange)="getPrice()"  class="form-control" id="numberAdult">
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
                 <label class="text-black" for="numberChildrenBig">Trẻ em(5 - 11 tuổi):</label>
-                <input type="number" class="form-control" id="numberChildrenBig" min="0" max="30">
+                <input type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="child" (ngModelChange)="getPrice()" class="form-control" id="numberChildrenBig" min="0" max="30">
               </div>
             </div>
           </div>
@@ -209,13 +209,13 @@
             <div class="col-6">
               <div class="form-group">
                 <label class="text-black" for="numberChildrenNormal">Trẻ nhỏ( 2 - 5 tuổi):</label>
-                <input type="number" class="form-control" id="numberChildrenNormal" min="0" max="30">
+                <input type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="child1" class="form-control" id="numberChildrenNormal" min="0" max="30">
               </div>
             </div>
             <div class="col-6">
               <div class="form-group">
                 <label class="text-black" for="numberChildrenSmall">Trẻ Sơ sinh(nhỏ hơn 2 tuổi):</label>
-                <input type="number" class="form-control" id="numberChildrenSmall" min="0" max="30">
+                <input type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="child2" class="form-control" id="numberChildrenSmall" min="0" max="30">
               </div>
             </div>
           </div>
@@ -236,35 +236,35 @@
             <tbody>
               <tr>
                 <td>
-                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá người lớn x <span>1</span></p>
+                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá người lớn x <span>{{person}}</span></p>
                 </td>
-                <td>3,450,000VND</td>
+                <td>{{personCost}} VND</td>
               </tr>
               <tr>
                 <td>
-                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá trẻ em x <span>0</span></p>
+                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá trẻ em x <span>{{child}}</span></p>
                 </td>
-                <td>0VND</td>
+                <td>{{childCost}} VND</td>
               </tr>
               <tr>
                 <td>
-                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá trẻ nhỏ x <span>0</span></p>
+                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá trẻ nhỏ x <span>{{child1}}</span></p>
                 </td>
-                <td>0VND</td>
+                <td>0 VND</td>
               </tr>
               <tr>
                 <td>
-                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá trẻ sơ sinh x <span>0</span></p>
+                  <p>Tour Quy Nhơn - Phú Yên 4 Ngày 3 Đêm - Giá trẻ sơ sinh x <span>{{child2}}</span></p>
                 </td>
-                <td>0VND</td>
+                <td>0 VND</td>
               </tr>
               <tr>
                 <td>Tạm tính</td>
-                <td>3,450,000VND</td>
+                <td>{{total}} VND</td>
               </tr>
               <tr>
                 <td style="font-weight: bold;">Tổng</td>
-                <td style="font-weight: bold; font-size: 17px;">3,450,000VND</td>
+                <td style="font-weight: bold; font-size: 17px;">{{total}} VND</td>
               </tr>
             </tbody>
           </table>
