@@ -95,48 +95,35 @@
         <div class="custom-block point-special-tour" data-aos="fade-up">
           <h2 class="section-title"><i class="fa-solid fa-calendar"></i> Lịch trình</h2>
           <div class="custom-accordion" id="accordion_1">
-            <div class="accordion-item">
-              <h2 class="mb-0">
-                <button class="btn btn-link btn-link-color" type="button" data-toggle="collapse"
-                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">NGÀY 01: ĐÀ NẴNG – QUY
-                  NHƠN CITY TOUR (ĂN TRƯA,
-                  TỐI)</button>
-              </h2>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion_1">
-                <div class="accordion-body">
-                  <p>
-                    Xe và HDV sẽ đón khách tại sân bay/nhà ga, đưa đoàn đi ăn trưa tại nhà hàng, sau đó về khách sạn
-                    nghỉ ngơi
-
-                    Buổi chiều, bắt đầu chuyến tham quan:
-
-                    * Khu du lịch Ghềnh Ráng, Quý khách được dạo bước trên dốc Mộng Cầm, đồi Thi Nhân, bãi tắm Hoàng
-                    Hậu, Tiên Sa, và sống lại với những vần thơ Hàn Mặc Tử cùng tài nghệ của bút lửa Dzũ Kha.
-
-                    *Làng Phong Quy Hòa, nơi cuộc sống của con người bình yên, thong dong đến lạ bên dưới dàn hoa giấy
-                    rực rỡ, đây cũng là nơi Hàn Mặc Tử sinh sống trong thời gian cuối đời.
-
-                    *Tháp Đôi, là cụm 02 ngọn tháp Chăm được xây duyên dáng bên cạnh nhau nằm giữa lòng thành phố.
-
-                    *Quảng Trường Quy Nhơn, nơi tượng đài Nguyễn Sinh Sắc – Nguyễn Tất Thành uy nghi tượng trưng cho
-                    tình cha con hòa quyện với tình yêu nước.
-
-                    18h00: Đưa quý khách ăn tối tại nhà hàng. Với những món ẩm thực đặc trưng miền đất võ
-
-                    Nghỉ đêm tại Quy Nhơn
-                  </p>
+            
+            <ng-container *ngFor="let item of schedule; let i = index">
+              
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button *ngIf="item.isShow"  class="btn btn-link btn-link-color" type="button" (click)="displaySchedule(i)" data-toggle="collapse"
+                     aria-expanded="true" aria-controls="collapseOne">{{item.header}}</button>
+                     <button *ngIf="!item.isShow"  class="btn btn-link btn-link-color" type="button" (click)="displaySchedule(i)" data-toggle="collapse"
+                     aria-expanded="false" aria-controls="collapseOne">{{item.header}}</button>
+                </h2>
+  
+                <div  *ngIf="item.isShow" aria-labelledby="headingOne" data-parent="#accordion_1">
+                  <div class="accordion-body">
+                    <p>
+                      {{item.content}}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div> <!-- .accordion-item -->
+              </div> 
 
-            <div class="accordion-item">
+            </ng-container>
+
+            <!-- <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-link-color collapsed" type="button" data-toggle="collapse"
                   data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">NGÀY 02: PHÚ YÊN – XỨ
                   NẪU HOA VÀNG CỎ XANH (ĂN SÁNG, TRƯA, TỐI)</button>
               </h2>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion_1">
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion_1">
                 <div class="accordion-body">
                   <p>
                     A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
@@ -145,7 +132,7 @@
                   </p>
                 </div>
               </div>
-            </div> <!-- .accordion-item -->
+            </div> 
             <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-link-color collapsed" type="button" data-toggle="collapse"
@@ -161,7 +148,7 @@
                 </div>
               </div>
 
-            </div> <!-- .accordion-item -->
+            </div> 
             <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-link-color collapsed" type="button" data-toggle="collapse"
@@ -177,13 +164,31 @@
                 </div>
               </div>
 
-            </div> <!-- .accordion-item -->
+            </div>  -->
           </div>
         </div>
         <div class="custom-block point-special-tour" data-aos="fade-up">
           <h2 id="collapseSeviceOne-btn"  class="section-title"><i class="fa-solid fa-clipboard"></i> Dịch vụ</h2>
           <div class="custom-accordion" id="accordion_1">
-            <div class="accordion-item">
+            <ng-container *ngFor="let item of service; let i = index">
+              <div class="accordion-item">
+                <h2 class="mb-0">
+                  <button *ngIf="item.isShow"  class="btn btn-link btn-link-color" type="button" (click)="displayService(i)" data-toggle="collapse"
+                     aria-expanded="true" aria-controls="collapseOne">{{item.header}}</button>
+                     <button *ngIf="!item.isShow"  class="btn btn-link btn-link-color" type="button" (click)="displayService(i)" data-toggle="collapse"
+                     aria-expanded="false" aria-controls="collapseOne">{{item.header}}</button>
+                </h2>
+  
+                <div  *ngIf="item.isShow" aria-labelledby="headingOne" data-parent="#accordion_1">
+                  <div class="accordion-body">
+                    <p>
+                      {{item.content}}
+                    </p>
+                  </div>
+                </div>
+              </div> 
+            </ng-container>
+            <!-- <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-link-color" type="button" data-toggle="collapse"
                   data-target="#collapseSeviceOne" aria-expanded="false" aria-controls="collapseSeviceOne">Dịch vụ bao
@@ -233,7 +238,7 @@
                   </p>
                 </div>
               </div>
-            </div> <!-- .accordion-item -->
+            </div> 
             <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-link-color" type="button" data-toggle="collapse"
@@ -275,7 +280,7 @@
                   </p>
                 </div>
               </div>
-            </div> <!-- .accordion-item -->
+            </div> 
             <div class="accordion-item">
               <h2 class="mb-0">
                 <button class="btn btn-link btn-link-color" type="button" data-toggle="collapse"
@@ -289,7 +294,7 @@
                   </p>
                 </div>
               </div>
-            </div> <!-- .accordion-item -->
+            </div>  -->
           </div>
         </div>
         <!-- tour liên quan -->
