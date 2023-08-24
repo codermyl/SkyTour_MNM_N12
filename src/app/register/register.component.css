@@ -12,7 +12,8 @@
     font-family: Arial, sans-serif;
     padding: 100px;
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color: #6998AB;
+  
   }
   
   .login-form {
@@ -23,6 +24,9 @@
     width: 600px;
     text-align: center;
     margin: auto;
+    background-image: url("../../assets/images/register.jpg");
+    
+   
   }
   
   .login-form h1 {
