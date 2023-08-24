@@ -14,7 +14,9 @@ import { CategoryComponent } from './category/category.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CommonModule } from '@angular/common';
-
+import { OtpComponent } from './otp/otp.component';
+import {HttpClientModule } from '@angular/common/http';
+import { DataService } from './servicesAPI/data.service';
 @NgModule({
   declarations: [					
     AppComponent,
@@ -24,7 +26,8 @@ import { CommonModule } from '@angular/common';
       LoginComponent,
       RegisterComponent,
       PayComponent,
-      ServicesComponent
+      ServicesComponent,
+      OtpComponent
    ],
   imports: [
     BrowserModule,
@@ -32,9 +35,10 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     FormsModule,
     ToastrModule.forRoot(),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

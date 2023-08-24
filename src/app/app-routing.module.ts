@@ -8,6 +8,7 @@ import { ServicesComponent } from './services/services.component';
 import { CategoryComponent } from './category/category.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { OtpComponent } from './otp/otp.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,11 @@ const routes: Routes = [
   {
     path:'category',
     component: CategoryComponent,
+  },
+
+  {
+    path:'otp',
+    component: OtpComponent,
   },
 
   
