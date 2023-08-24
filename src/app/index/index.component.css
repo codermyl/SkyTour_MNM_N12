@@ -29,6 +29,13 @@
     left: 0;
     z-index: -1;
   }
+
+  .img-love{
+    width: 381px;
+    height: 521px;
+  }
+
+  
   
   .slides img.active {
     opacity: 1;
