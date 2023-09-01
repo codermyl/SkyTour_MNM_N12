@@ -1572,7 +1572,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .site-nav__color{
-  background-color: var(--nen-toi);
+  background-color: #1A374D;
 }
 .title-tou__p{
   font-size: 25px;
@@ -1625,7 +1625,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-size: 25px !important;
 }
 .btn-link-color{
-  background-color: var(--nen-toi) !important;
+  background-color: #1A374D !important;
   margin-bottom: 5px;
 }
 /* .btn-link__color-xanh{

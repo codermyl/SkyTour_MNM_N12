@@ -1,0 +1,285 @@
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icofont-close js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="site-navigation">
+      <a href="index" class="logo m-0">SkyTour <span class="text-primary">.</span></a>
+
+      <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+        <li><a href="index">Trang chủ</a></li>
+        <li class="has-children">
+          <a href="#">Địa điểm</a>
+          <ul class="dropdown">
+            <li><a href="elements">Biển</a></li>
+            <li><a href="#">Núi rừng</a></li>
+            <li class="has-children">
+              <a href="#">Khu vui chơi giải trí</a>
+              <ul class="dropdown">
+                <li><a href="#">Công viên nước</a></li>
+                <li><a href="#">Trung tâm thương mại</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li><a href="#">Cắm trại</a></li>
+          </ul>
+        </li>
+        <li><a href="services">Dịch vụ</a></li>
+        <li  class="active"><a href="contact">Liên hệ</a></li>
+        <li ><a href="login">{{app.isLoggin?'Đăng xuất':'Đăng nhập'}}</a></li>
+
+      </ul>
+
+      <a href="#"
+        class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+        data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="hero hero-inner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mx-auto text-center">
+        <div class="intro-wrap">
+          <h1 class="mb-0">Liên hệ với chúng tôi</h1>
+          <p class="text-white">"CHẤT LƯỢNG LÀM NÊN DANH TIẾNG" là phương châm hoạt động và cũng là thông điệp mà SkyTour muốn gửi tới quý khách hàng! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label class="text-black" for="lname">Họ</label>
+                <input type="text" class="form-control" id="lname">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label class="text-black" for="fname">Tên</label>
+                <input type="text" class="form-control" id="fname">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="text-black" for="email">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+
+          <div class="form-group">
+            <label class="text-black" for="message">Tin nhắn</label>
+            <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+        </form>
+      </div>
+      <div class="col-lg-5 ml-auto">
+        <div class="quick-contact-item d-flex align-items-center mb-4">
+          <span class="flaticon-house"></span>
+          <address class="text">
+            Minh Khai - Bắc Từ Liêm - Hà Nội
+          </address>
+        </div>
+        <div class="quick-contact-item d-flex align-items-center mb-4">
+          <span class="flaticon-phone-call"></span>
+          <address class="text">
+            +84 392 720 312
+          </address>
+        </div>
+        <div class="quick-contact-item d-flex align-items-center mb-4">
+          <span class="flaticon-mail"></span>
+          <address class="text">
+            hquanganh123@gmail.com
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="untree_co-section testimonial-section mt-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-7 text-center">
+        <h2 class="section-title text-center mb-5">Phản hồi</h2>
+
+        <div >
+          <div class="testimonial mx-auto">
+            <figure class="img-wrap">
+              <img src="../../assets/images/person_2.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <h3 class="name">Nguyễn Quỳnh Anh</h3>
+            <blockquote>
+              <p>&ldquo;Tôi đã tham gia một chuyến du lịch ở Việt Nam cùng với đoàn của công ty du
+                lịch ABC. Tôi rất hài lòng với dịch vụ tour vì các hướng dẫn viên rất chuyên nghiệp
+                và thân thiện. Họ đã giúp tôi và đoàn của tôi khám phá những địa điểm đẹp và thú vị
+                nhất của Việt Nam.&rdquo;</p>
+            </blockquote>
+          </div>
+
+          <div class="testimonial mx-auto">
+            <figure class="img-wrap">
+              <img src="../../assets/images/person_3.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <h3 class="name">Nguyễn Quốc Anh</h3>
+            <blockquote>
+              <p>&ldquo;Tôi cảm thấy rất an tâm vì họ đã giải đáp cho tôi mọi thắc mắc và đưa ra những
+                lời khuyên hữu ích. Không chỉ vậy, các hoạt động và trải nghiệm cũng rất thú vị và
+                đáng nhớ. Tôi sẽ chắc chắn giới thiệu dịch vụ cho bạn bè và người thân của mình nếu
+                họ muốn thăm Việt Nam.&rdquo;</p>
+            </blockquote>
+          </div>
+
+          <div class="testimonial mx-auto">
+            <figure class="img-wrap">
+              <img src="../../assets/images/person_4.jpg" alt="Image" class="img-fluid">
+            </figure>
+            <h3 class="name">Nguyễn Quỳnh Anh</h3>
+            <blockquote>
+              <p>&ldquo;Là một hướng dẫn viên, tôi sẽ luôn sẵn sàng giúp các bạn trả lời mọi thắc mắc
+                và đưa ra những lời khuyên hữu ích để chuyến du lịch của các bạn trở nên thật tuyệt
+                vời.&rdquo;</p>
+            </blockquote>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- footer -->
+<div class="site-footer">
+  <div class="inner first">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="widget">
+            <h3 class="heading" style="font-size: 30px; font-weight: bold;">SkyTour</h3>
+            <p>Công ty được sự bảo hộ của nhà nước và được cấp phép kinh doanh online. ® SkyTour nay là
+              thương hiệu mới của Tour Cafe</p>
+          </div>
+          <div class="widget">
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              <li><a href="#"><span class="icon-dribbble"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-apple"></span></a></li>
+              <li><a href="#"><span class="icon-google"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="widget">
+            <h3 class="heading">Chính sách</h3>
+            <ul class="links list-unstyled">
+              <li><a href="#" style="color: #777;">Chính sách bảo hành & đổi trả dịch vụ</a></li>
+              <li><a href="#" style="color: #777;">Chính sách vận chuyển giao nhận</a></li>
+              <li><a href="#" style="color: #777;">Chính sách về bảo mật thông tin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="heading">Hỗ trợ khách hàng</h3>
+            <ul class="links list-unstyled">
+              <li><a href="#" style="color: #777;">Giới thiệu</a></li>
+              <li><a href="#" style="color: #777;">Tin tức</a></li>
+              <li><a href="#" style="color: #777;">Hướng dẫn đăng ký</a></li>
+              <li><a href="#" style="color: #777;">Chính sách & Quy định chung</a></li>
+              <li><a href="#" style="color: #777;">Hình thức thanh toán</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="widget">
+            <h3 class="heading">Thông tin liên hệ</h3>
+            <ul class="list-unstyled quick-info links">
+              <li class="email">
+                <p>hquanganh123@gmail.com</p>
+              </li>
+              <li class="phone">
+                <p>039 2720 312</p>
+              </li>
+              <li class="address">
+                <p>Trung tâm Hà Nội</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="inner dark">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+          <p>Bản quyền &copy;
+            <script>document.write(new Date().getFullYear());</script>. Đã đăng ký bản quyền. &mdash;
+            Thiết kế bởi <a href="https://www.facebook.com/quang.sam.777/" class="link-highlight">Ca sĩ
+              Quang Anh</a>
+            <!-- License information: https://untree.co/license/ --> Phân phối bởi <a
+              href="https://www.facebook.com/quang.sam.777/" target="_blank">Q&A</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+
+<script src="js/typed.js"></script>
+
+<script src="js/custom.js"></script>

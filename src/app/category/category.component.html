@@ -1,0 +1,350 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+      </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<nav class="site-nav site-nav__color">
+  <div class="container">
+      <div class="site-navigation">
+          <a href="index" class="logo m-0">SkyTour <span class="text-primary">.</span></a>
+
+          <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+              <li><a href="index">Trang chủ</a></li>
+              <li class="has-children">
+                  <a href="#">Địa điểm</a>
+                  <ul class="dropdown">
+                      <li><a href="elements">Biển</a></li>
+                      <li><a href="#">Núi rừng</a></li>
+                      <li class="has-children">
+                          <a href="#">Khu vui chơi giải trí</a>
+                          <ul class="dropdown">
+                              <li><a href="#">Công viên nước</a></li>
+                              <li><a href="#">Trung tâm thương mại</a></li>
+                              <li><a href="#"></a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Cắm trại</a></li>
+                  </ul>
+              </li>
+              <li><a href="services">Dịch vụ</a></li>
+              <li><a href="contact">Liên hệ</a></li>
+              <li ><a  href="login" >{{app.isLoggin?'Đăng xuất':'Đăng nhập'}}</a></li>
+
+          </ul>
+
+          <a href="#"
+              class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+              data-toggle="collapse" data-target="#main-navbar">
+              <span></span>
+          </a>
+
+      </div>
+  </div>
+</nav>
+
+<div class="untree_co-section">
+  <div class="container my-5">
+      <!-- <div class="mb-5">
+  <div class="owl-single dots-absolute owl-carousel">
+    <img src="images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid img-tour-relate">
+    <img src="images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+    <img src="images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+  </div>
+</div> -->
+
+      <div class="row justify-content-center">
+          <div class="col-lg-9">
+              <div class="navation">
+                  <p><a href="index">Trang chủ</a> <span><i class="fa-solid fa-angles-right"></i></span> <a
+                          href="category">Du lịch Hạ Long</a> </p>
+              </div>
+              <p class="title-tou__p" data-aos="fade-up" data-aos-delay="500" style="font-size: 35px;">DU LỊCH HẠ
+                  LONG</p>
+              <p class="title-tou__p" data-aos="fade-up" data-aos-delay="500" style="font-size: 12px;">Cập nhật
+                  hàng ngày danh sách tour du lịch Hà Nội</p>
+              <!--item  -->
+              <div class="wrapper-item-tour-list" data-aos="fade-left" data-aos-delay="100">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                          <img src="../../assets/images/slider-1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+                      </div>
+                      <div class="col-lg-8">
+                          <p class="title-tour-list font-weight-bold font-size-p" style="margin-top: 10px;">
+                             <a href="detail" class="title-tour-list__line">TOUR DU LỊCH VỊNH HẠ LONG – HẠ LONG PARK – BÃI CHÁY</a> 
+                          </p>
+                          <p>Hành trình: <span> Vịnh Hạ Long - Hạ Long Park - Bãi Cháy</span></p>
+                          <p>Phương tiện: <span>ô tô</span></p>
+                          <p>Khởi hành: <span>Các ngày trong tuần</span></p>
+                          <div class="time-tour-list">
+                              <div class="time-tour-list-left">
+                                  <span><i class="fa-solid fa-clock"></i> 2 ngày 1 đêm</span>
+                              </div>
+                              <div class="time-tour-list-right">
+                                  <p>1,950,000 đ <span
+                                          style="font-size: 15px; font-weight: lighter; text-decoration: line-through;">2,950,000
+                                          đ</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /item -->
+              <!--item  -->
+              <div class="wrapper-item-tour-list" data-aos="fade-left" data-aos-delay="100">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                          <img src="../../assets/images/slider-5.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+                      </div>
+                      <div class="col-lg-8">
+                          <p class="title-tour-list font-weight-bold font-size-p" style="margin-top: 10px;">
+                             <a href="detail" class="title-tour-list__line">TOUR DU LỊCH VỊNH HẠ LONG – HẠ LONG PARK – BÃI CHÁY</a> 
+                          </p>
+                          <p>Hành trình: <span> Vịnh Hạ Long - Hạ Long Park - Bãi Cháy</span></p>
+                          <p>Phương tiện: <span>ô tô</span></p>
+                          <p>Khởi hành: <span>Các ngày trong tuần</span></p>
+                          <div class="time-tour-list">
+                              <div class="time-tour-list-left">
+                                  <span><i class="fa-solid fa-clock"></i> 2 ngày 1 đêm</span>
+                              </div>
+                              <div class="time-tour-list-right">
+                                  <p>1,950,000 đ <span
+                                          style="font-size: 15px; font-weight: lighter; text-decoration: line-through;">2,950,000
+                                          đ</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /item -->
+              <!--item  -->
+              <div class="wrapper-item-tour-list" data-aos="fade-left" data-aos-delay="100">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                          <img src="../../assets/images/slider-2.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+                      </div>
+                      <div class="col-lg-8">
+                          <p class="title-tour-list font-weight-bold font-size-p" style="margin-top: 10px;">
+                             <a href="detail" class="title-tour-list__line">TOUR DU LỊCH VỊNH HẠ LONG – HẠ LONG PARK – BÃI CHÁY</a> 
+                          </p>
+                          <p>Hành trình: <span> Vịnh Hạ Long - Hạ Long Park - Bãi Cháy</span></p>
+                          <p>Phương tiện: <span>ô tô</span></p>
+                          <p>Khởi hành: <span>Các ngày trong tuần</span></p>
+                          <div class="time-tour-list">
+                              <div class="time-tour-list-left">
+                                  <span><i class="fa-solid fa-clock"></i> 2 ngày 1 đêm</span>
+                              </div>
+                              <div class="time-tour-list-right">
+                                  <p>1,950,000 đ <span
+                                          style="font-size: 15px; font-weight: lighter; text-decoration: line-through;">2,950,000
+                                          đ</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /item -->
+              <!--item  -->
+              <div class="wrapper-item-tour-list" data-aos="fade-left" data-aos-delay="100">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                          <img src="../../assets/images/slider-4.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+                      </div>
+                      <div class="col-lg-8">
+                          <p class="title-tour-list font-weight-bold font-size-p" style="margin-top: 10px;">
+                             <a href="detail" class="title-tour-list__line">TOUR DU LỊCH VỊNH HẠ LONG – HẠ LONG PARK – BÃI CHÁY</a> 
+                          </p>
+                          <p>Hành trình: <span> Vịnh Hạ Long - Hạ Long Park - Bãi Cháy</span></p>
+                          <p>Phương tiện: <span>ô tô</span></p>
+                          <p>Khởi hành: <span>Các ngày trong tuần</span></p>
+                          <div class="time-tour-list">
+                              <div class="time-tour-list-left">
+                                  <span><i class="fa-solid fa-clock"></i> 2 ngày 1 đêm</span>
+                              </div>
+                              <div class="time-tour-list-right">
+                                  <p>1,950,000 đ <span
+                                          style="font-size: 15px; font-weight: lighter; text-decoration: line-through;">2,950,000
+                                          đ</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /item -->
+              <!--item  -->
+              <div class="wrapper-item-tour-list" data-aos="fade-left" data-aos-delay="100">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4">
+                          <img src="../../assets/images/slider_1.jpg" alt="Free HTML Template by Untree.co" class="img-fluid">
+                      </div>
+                      <div class="col-lg-8">
+                          <p class="title-tour-list font-weight-bold font-size-p" style="margin-top: 10px;">
+                             <a href="detail" class="title-tour-list__line">TOUR DU LỊCH VỊNH HẠ LONG – HẠ LONG PARK – BÃI CHÁY</a> 
+                          </p>
+                          <p>Hành trình: <span> Vịnh Hạ Long - Hạ Long Park - Bãi Cháy</span></p>
+                          <p>Phương tiện: <span>ô tô</span></p>
+                          <p>Khởi hành: <span>Các ngày trong tuần</span></p>
+                          <div class="time-tour-list">
+                              <div class="time-tour-list-left">
+                                  <span><i class="fa-solid fa-clock"></i> 2 ngày 1 đêm</span>
+                              </div>
+                              <div class="time-tour-list-right">
+                                  <p>1,950,000 đ <span
+                                          style="font-size: 15px; font-weight: lighter; text-decoration: line-through;">2,950,000
+                                          đ</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- /item -->
+          </div>
+          <div class="col-lg-3" style="margin-top: 90px;">
+              <div class="custom-block custom-block-sticky" data-aos="fade-up" data-aos-delay="100">
+                  <h2 class="section-title">BẠN MUỐN KHỞI HÀNH TỪ ĐÂU</h2>
+                  <table class="table table-dark table-hover">
+                      <tbody>
+                          <tr>
+                              <th><input name="radioStartTour" class="form-check-input" type="radio" value="HaNoi"
+                                      id="defaultCheck1"></th>
+                              <td> <label class="form-check-label" for="defaultCheck1">
+                                      Hà Nội
+                                  </label></td>
+                          </tr>
+                          <tr>
+                              <th><input name="radioStartTour" class="form-check-input" type="radio"
+                                      value="DaNang" id="defaultCheck2"></th>
+                              <td> <label class="form-check-label" for="defaultCheck2">
+                                      Đà Nẵng
+                                  </label></td>
+                          </tr>
+                          <tr>
+                              <th><input name="radioStartTour" class="form-check-input" type="radio"
+                                      value="HoChiMinh" id="defaultCheck3"></th>
+                              <td> <label class="form-check-label" for="defaultCheck3">
+                                      Hồ Chí Minh
+                                  </label></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+
+
+          </div>
+      </div>
+  </div>
+</div>
+<!-- footer -->
+<div class="site-footer">
+  <div class="inner first">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                      <h3 class="heading" style="font-size: 30px; font-weight: bold;">SkyTour</h3>
+                      <p>Công ty được sự bảo hộ của nhà nước và được cấp phép kinh doanh online. ® SkyTour nay là
+                          thương hiệu mới của Tour Cafe</p>
+                  </div>
+                  <div class="widget">
+                      <ul class="list-unstyled social">
+                          <li><a href="#"><span class="icon-twitter"></span></a></li>
+                          <li><a href="#"><span class="icon-instagram"></span></a></li>
+                          <li><a href="#"><span class="icon-facebook"></span></a></li>
+                          <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                          <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                          <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                          <li><a href="#"><span class="icon-apple"></span></a></li>
+                          <li><a href="#"><span class="icon-google"></span></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                      <h3 class="heading">Chính sách</h3>
+                      <ul class="links list-unstyled">
+                          <li><a href="#" style="color: #777;">Chính sách bảo hành & đổi trả dịch vụ</a></li>
+                          <li><a href="#" style="color: #777;">Chính sách vận chuyển giao nhận</a></li>
+                          <li><a href="#" style="color: #777;">Chính sách về bảo mật thông tin</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3 pl-lg-5">
+                  <div class="widget">
+                      <h3 class="heading">Hỗ trợ khách hàng</h3>
+                      <ul class="links list-unstyled">
+                          <li><a href="#" style="color: #777;">Giới thiệu</a></li>
+                          <li><a href="#" style="color: #777;">Tin tức</a></li>
+                          <li><a href="#" style="color: #777;">Hướng dẫn đăng ký</a></li>
+                          <li><a href="#" style="color: #777;">Chính sách & Quy định chung</a></li>
+                          <li><a href="#" style="color: #777;">Hình thức thanh toán</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="widget">
+                      <h3 class="heading">Thông tin liên hệ</h3>
+                      <ul class="list-unstyled quick-info links">
+                          <li class="email">
+                              <p>hquanganh123@gmail.com</p>
+                          </li>
+                          <li class="phone">
+                              <p>039 2720 312</p>
+                          </li>
+                          <li class="address">
+                              <p>Trung tâm Hà Nội</p>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="inner dark">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+                  <p>Bản quyền &copy;
+                      <script>document.write(new Date().getFullYear());</script>. Đã đăng ký bản quyền. &mdash;
+                      Thiết kế bởi <a href="https://www.facebook.com/quang.sam.777/" class="link-highlight">Ca sĩ
+                          Quang Anh</a>
+                      <!-- License information: https://untree.co/license/ --> Phân phối bởi <a
+                          href="https://www.facebook.com/quang.sam.777/" target="_blank">Q&A</a>
+                  </p>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /footer -->
+
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+
+<script src="js/typed.js"></script>
+
+<script src="js/custom.js"></script>

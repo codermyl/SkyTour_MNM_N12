@@ -1,0 +1,525 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icofont-close js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"></div>
+</div>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="site-navigation">
+      <a href="" class="logo m-0">SkyTour <span class="text-primary">.</span></a>
+
+      <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+        <li><a href="">Trang chủ</a></li>
+        <li class="has-children">
+          <a href="#">Địa điểm</a>
+          <ul class="dropdown">
+            <li><a href="elements">Biển</a></li>
+            <li><a href="#">Núi rừng</a></li>
+            <li class="has-children">
+              <a href="#">Khu vui chơi giải trí</a>
+              <ul class="dropdown">
+                <li><a href="#">Công viên nước</a></li>
+                <li><a href="#">Trung tâm thương mại</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </li>
+            <li><a href="#">Cắm trại</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="services">Dịch vụ</a></li>
+        <li><a href="contact">Liên hệ</a></li>
+        <li ><a href="login">{{app.isLoggin?'Đăng xuất':'Đăng nhập'}}</a></li>
+
+      </ul>
+
+      <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+        data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+
+    </div>
+  </div>
+</nav>
+
+
+<div class="hero hero-inner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mx-auto text-center">
+        <div class="intro-wrap">
+          <h1 class="mb-0 custom-hero">Các dịch vụ của SkyTour</h1>
+          <p class="text-white">"Dịch vụ du lịch an toàn và tiện ích đưa bạn đến mọi miền đất nước"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <!-- <div class="col-lg-6 text-center">
+        <h2 class="section-title text-center mb-3">More Services</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      </div> -->
+    </div>
+    <div class="row align-items-stretch">
+      <div class="col-lg-4 order-lg-1">
+        <div class="h-100">
+          <div class="frame h-100">
+            <div class="feature-img-bg h-100" style="background-image: url('../../assets/images/hero-slider-1.jpg');"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <!-- <span class="flaticon-house display-4 text-primary"></span> -->
+            <i class="fa-solid fa-house" style="font-size: 60px;"></i>
+            <span class="place-home">Nơi ở</span>
+            <p class="mb-0" style="margin: 10px 0px;">Dịch vụ nơi ở trong du lịch bao gồm các dịch vụ liên quan đến
+              chỗ ở của du khách trong suốt chuyến đi.</p>
+            <a href="#services-title-place"  class="btn btn-dark" style="padding: 10px; margin-top: 35px;">Xem chi
+              tiết</a>
+          </div>
+        </div>
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <!-- <span class="flaticon-house display-4 text-primary"></span> -->
+            <i class="fa-solid fa-car" style="font-size: 60px;"></i>
+            <span class="place-home">Phương tiện</span>
+            <p class="mb-0" style="margin: 10px 0px;">Dịch vụ phương tiện trong du lịch bao gồm các dịch vụ liên quan
+              đến việc di chuyển của du khách trong suốt chuyến đi.</p>
+            <a href="#services-title-vehicle" class="btn btn-dark" style="padding: 10px; margin-top: 25px;">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-3">
+
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <!-- <span class="flaticon-house display-4 text-primary"></span> -->
+            <i class="fa-solid fa-cookie-bite" style="font-size: 60px;"></i>
+            <span class="place-home">Ăn uống</span>
+            <p class="mb-0" style="margin: 10px 0px;">Dịch vụ ăn uống trong du lịch bao gồm các dịch vụ liên quan đến
+              ẩm thực và gia vị địa phương của các địa điểm du lịch.</p>
+            <a href="#services-title-eat" class="btn btn-dark" style="padding: 10px; margin-top: 20px;">Xem chi tiết</a>
+          </div>
+        </div>
+        <div class="feature-1 d-md-flex">
+          <div class="align-self-center">
+            <!-- <span class="flaticon-house display-4 text-primary"></span> -->
+            <i class="fa-solid fa-person" style="font-size: 60px;"></i>
+            <span class="place-home">Hướng dẫn viên</span>
+            <p class="mb-0" style="margin: 10px 0px;">Là một trong những dịch vụ quan trọng nhất để giúp du khách khám
+              phá các địa điểm du lịch và hiểu rõ hơn về văn hóa, lịch sử và địa lý của địa phương.</p>
+            <a href="#services-title-guide" class="btn btn-dark" style="padding: 10px; margin-top: 10px;">Xem chi tiết</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- nơi ở -->
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="section-title text-center" id="services-title-place">
+          <i class="fa-solid fa-house" style="font-size: 60px;"></i>
+          Nơi ở
+        </h2>
+      </div>
+    </div>
+
+    <div  style="display: flex; flex-wrap: wrap; justify-content: space-around; ">
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Khách sạn và resort</h3>
+          <p class="location">Các cơ sở lưu trú này cung cấp các phòng nghỉ với đầy đủ tiện nghi và dịch vụ, bao gồm
+            bữa sáng, đưa đón sân bay và các hoạt động giải trí.</p>
+        </div>
+        <img class="img-eat" src="../../assets/images/canhodichvu.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Homestay</h3>
+          <p class="location"> Đây là dịch vụ cho phép khách hàng lưu trú tại nhà dân địa phương, trải nghiệm cuộc
+            sống của người dân địa phương và tham gia vào các hoạt động văn hóa.</p>
+        </div>
+        <img src="../../assets/images/homestay.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Nhà nghỉ và khách sạn nhỏ</h3>
+          <span class="location">Loại hình dịch vụ này thường cung cấp các phòng nghỉ đơn giản với các tiện nghi cơ
+            bản như giường, tủ quần áo và phòng tắm.</span>
+        </div>
+        <img class="img-eat" src="../../assets/images/nhanghi.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+
+      
+      
+    </div>
+
+  </div>
+</div>
+<!-- nơi ở -->
+<!-- ăn uống -->
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="section-title text-center" id="services-title-eat">
+          <i class="fa-solid fa-cookie-bite" style="font-size: 60px;"></i>
+          Ăn uống
+        </h2>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-3-slider">
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Nhà hàng</h3>
+          <p class="location">Các nhà hàng cung cấp các món ăn địa phương và quốc tế với chất lượng và giá cả khác nhau để đáp ứng nhu cầu của khách hàng.</p>
+        </div>
+        <img src="../../assets/images/nhahang.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Quán ăn đường phố</h3>
+          <p class="location">Loại hình dịch vụ này cung cấp các món ăn địa phương phục vụ trên vỉa hè hoặc các quầy bán hàng nhỏ.</p>
+        </div>
+        <img src="../../assets/images/quananduongpho.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+     
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Dịch vụ ẩm thực đặc biệt</h3>
+          <p class="location">Dịch vụ này cung cấp các món ăn đặc biệt hoặc các trải nghiệm ẩm thực địa phương, chẳng hạn như thử nấu ăn hoặc tham gia vào các lớp học nấu ăn địa phương.</p>
+        </div>
+        <img src="../../assets/images/dichvuanuongdacbiet.jpg" alt="Image" style="height: 400px;">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /ăn uống -->
+<!-- phương tiện -->
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="section-title text-center" id="services-title-vehicle">
+          <i class="fa-solid fa-car" style="font-size: 60px;"></i>
+          Phương tiện
+        </h2>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-3-slider">
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Đưa đón sân bay</h3>
+          <p class="location"> Dịch vụ này cung cấp xe đưa đón khách từ sân bay đến khách sạn hoặc điểm đến khác và ngược lại.</p>
+        </div>
+        <img src="../../assets/images/dichvuduadonsanbay.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+     
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Xe buýt du lịch</h3>
+          <span class="location"> Xe buýt đưa đón khách hàng tham quan các điểm đến trong suốt chuyến đi.</span>
+        </div>
+        <img src="../../assets/images/xebusdulich.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Tàu và thuyền du lịch</h3>
+          <p class="location">Loại hình dịch vụ này cung cấp các chuyến đi bằng tàu hoặc thuyền để khách hàng khám phá các địa điểm du lịch ven biển hoặc trên sông.</p>
+        </div>
+        <img src="../../assets/images/tauthuyendulich.jpg" alt="Image" style="height: 400px;">
+      </div>
+  </div>
+  </div>
+</div>
+<!-- /phương tiện -->
+<!-- hướng dẫn viên -->
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row text-center justify-content-center mb-5">
+      <div class="col-lg-7">
+        <h2 class="section-title text-center" id="services-title-guide">
+          <i class="fa-solid fa-person" style="font-size: 60px;"></i>
+          Hướng dẫn viên
+        </h2>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-3-slider">
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Hướng dẫn viên địa phương</h3>
+          <p class="location"> Là những người địa phương có kiến thức sâu về lịch sử, văn hóa và địa lý của địa phương.</p>
+        </div>
+        <img src="../../assets/images/huongdanviendiaphuong.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Hướng dẫn viên nước ngoài</h3>
+          <p class="location"> Là những người có kinh nghiệm và kiến thức đa dạng về nhiều nước, văn hóa và ngôn ngữ khác nhau.</p>
+        </div>
+        <img src="../../assets/images/huongdanviennuocngoai.jpg" alt="Image" style="height: 400px;">
+      </div>
+
+      <div class="item">
+        <div class="media-text" style="height: 150px;">
+          <h3>Hướng dẫn viên hỗ trợ ngôn ngữ</h3>
+          <span class="location">Là những người có khả năng giao tiếp tốt trong nhiều ngôn ngữ để giúp du khách hiểu rõ hơn về địa điểm du lịch và các thông tin liên quan.</span>
+        </div>
+        <img src="../../assets/images/huongdanvienhotrongonngu.jpg" alt="Image" style="height: 400px;">
+      </div>
+  </div>
+  </div>
+</div>
+<!--/hướng dẫn viên -->
+
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="">
+          <a href="#" class="d-block mb-3"><img src="../../assets/images/hero-slider-1.jpg" alt="Image" class="img-fluid"></a>
+          <div class="d-flex">
+            <div>
+              <h3><a href="#">Excellence in Travel</a></h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                the blind texts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="media-1">
+          <a href="#" class="d-block mb-3"><img src="../../assets/images/hero-slider-2.jpg" alt="Image" class="img-fluid"></a>
+          <div class="d-flex">
+            <div>
+              <h3><a href="#">Discovering Best</a></h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                the blind texts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="media-1">
+          <a href="#" class="d-block mb-3"><img src="../../assets/images/hero-slider-3.jpg" alt="Image" class="img-fluid"></a>
+          <div class="d-flex">
+            <div>
+              <h3><a href="#">A New Moments of Life</a></h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                the blind texts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="media-1">
+          <a href="#" class="d-block mb-3"><img src="../../assets/images/hero-slider-4.jpg" alt="Image" class="img-fluid"></a>
+          <div class="d-flex">
+            <div>
+              <h3><a href="#">Joy To Your Journey</a></h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                the blind texts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="untree_co-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service text-center">
+          <span class="icon-paper-plane"></span>
+          <h3>Excellence in Travel</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service text-center">
+          <span class="icon-tag"></span>
+          <h3>Discover Best</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service text-center">
+          <span class="icon-user"></span>
+          <h3>A New Moments of Life</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3">
+        <div class="service text-center">
+          <span class="icon-support"></span>
+          <h3>Joy To Your Journey</h3>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+            blind texts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- lienhengay -->
+<div class="py-5 cta-section">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h2 class="mb-2 text-white">Liên lạc với chúng tôi ngay</h2>
+        <p class="mb-4 lead text-white text-white-opacity">Cho phép bạn khám phá những gì tốt nhất.</p>
+        <p class="mb-0"><a href="contact"
+            class="btn btn-outline-white text-white btn-md font-weight-bold">Liên hệ</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /lienhengay -->
+<!-- footer -->
+<div class="site-footer">
+  <div class="inner first">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="widget">
+            <h3 class="heading" style="font-size: 30px; font-weight: bold;">SkyTour</h3>
+            <p>Công ty được sự bảo hộ của nhà nước và được cấp phép kinh doanh online. ® SkyTour nay là thương hiệu mới của Tour Cafe</p>
+          </div>
+          <div class="widget">
+            <ul class="list-unstyled social">
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-linkedin"></span></a></li>
+              <li><a href="#"><span class="icon-dribbble"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-apple"></span></a></li>
+              <li><a href="#"><span class="icon-google"></span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="widget">
+            <h3 class="heading">Chính sách</h3>
+            <ul class="links list-unstyled">
+              <li><a href="#" style="color: #777;">Chính sách bảo hành & đổi trả dịch vụ</a></li>
+              <li><a href="#" style="color: #777;">Chính sách vận chuyển giao nhận</a></li>
+              <li><a href="#" style="color: #777;">Chính sách về bảo mật thông tin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 pl-lg-5">
+          <div class="widget">
+            <h3 class="heading">Hỗ trợ khách hàng</h3>
+            <ul class="links list-unstyled">
+              <li><a href="#" style="color: #777;">Giới thiệu</a></li>
+              <li><a href="#" style="color: #777;">Tin tức</a></li>
+              <li><a href="#" style="color: #777;">Hướng dẫn đăng ký</a></li>
+              <li><a href="#" style="color: #777;">Chính sách & Quy định chung</a></li>
+              <li><a href="#" style="color: #777;">Hình thức thanh toán</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="widget">
+            <h3 class="heading">Thông tin liên hệ</h3>
+            <ul class="list-unstyled quick-info links">
+              <li class="email"><p>hquanganh123@gmail.com</p></li>
+              <li class="phone"><p>039 2720 312</p></li>
+              <li class="address"><p>Trung tâm Hà Nội</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="inner dark">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+          <p>Bản quyền &copy;
+            <script>document.write(new Date().getFullYear());</script>. Đã đăng ký bản quyền. &mdash;
+            Thiết kế bởi <a href="https://www.facebook.com/quang.sam.777/" class="link-highlight">Ca sĩ Quang Anh</a>
+            <!-- License information: https://untree.co/license/ --> Phân phối bởi <a
+              href="https://www.facebook.com/quang.sam.777/" target="_blank">Q&A</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+
+<!-- <div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div> -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+
+<script src="js/typed.js"></script>
+
+<script src="js/custom.js"></script>

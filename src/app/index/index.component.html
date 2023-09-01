@@ -1,0 +1,849 @@
+<meta name="keywords" content="bootstrap, bootstrap4" />
+
+<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div id="myContainer">
+  <div class="site-mobile-menu site-navbar-target">
+
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="" class="logo m-0">SkyTour <span class="text-primary">.</span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li class="active"><a href="">Trang chủ</a></li>
+          <li class="has-children">
+            <a href="#">Địa điểm</a>
+            <ul class="dropdown">
+              <li><a href="#">Biển</a></li>
+              <li><a href="#">Núi rừng</a></li>
+              <li class="has-children">
+                <a href="#">Khu vui chơi giải trí</a>
+                <ul class="dropdown">
+                  <li><a href="#">Công viên nước</a></li>
+                  <li><a href="#">Trung tâm thương mại</a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </li>
+              <li><a href="#">Cắm trại</a></li>
+            </ul>
+          </li>
+          <li><a href="services">Dịch vụ</a></li>
+          <li><a href="contact">Liên hệ</a></li>
+          <li ><a href="login">{{app.isLoggin?'Đăng xuất':'Đăng nhập'}}</a></li>
+        </ul>
+
+        <a href="#"
+          class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+          data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="intro-wrap">
+            <h1 class="mb-5"><span class="d-block">Cùng nhau trải nghiệm </span> những chuyến đi <span #typedMessage>{{typedMessageElement}}</span> </h1>
+
+            <div class="row">
+              <div class="col-12">
+                <form class="form">
+                  <div class="row mb-2">
+                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                      <!-- <input type="text" class="form-control" name="daterange"> -->
+                      <select name="" id="province" class="form-control custom-select"   >
+                        <option value="">Điểm xuất phát</option>
+                        <option value="All">Tất cả</option>
+                        <option value="HaNoi">Hà Nội</option>
+                        <option value="DaNang">Đà Nẵng</option>
+                        <option value="HoChiMinh">Hồ Chí Minh</option>
+                        <option value="HaiPhong">Hải Phòng</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-6">
+                      <!-- <input type="text" class="form-control" name="daterange"> -->
+                      <input type="text" id="search-tour"
+                        class="form-control form-control-plaintext"
+                        placeholder="Tìm tour du lịch..." style="padding-left: 10px;">
+                    </div>
+                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-2 wrapper-filter">
+                      <a href="#demo" data-toggle="collapse" class="filter"
+                        style="display: block;">
+                        <i class="fa-solid fa-sliders"></i>
+                      </a>
+                      <div class="wrapper-category-list collapse container-list" id="demo">
+                        <table class="table table-list-category table-dark table-hover">
+                          <tbody>
+                            <tr>
+                              <td><span class="clickable" data-value="1"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Vịnh Hạ Long</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i>Du lịch Hà Nội</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Hải Phòng</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                            <tr>
+                              <td><span class="clickable" data-value="2"><i
+                                    style="padding-right: 10px;"
+                                    class="fa-solid fa-mountain-sun"></i> Du lịch Phú Quốc</span></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-6 mb-3 mb-lg-0 col-lg-4">
+                      <input type="submit" (click)="search()" class="btn btn-primary btn-block"
+                        value="Tìm kiếm tour">
+                    </div>
+                    <div class="col-lg-8">
+                      <label class="control control--checkbox mt-3">
+                        <span class="caption">Lưu tìm kiếm</span>
+                        <input type="checkbox" checked="checked" />
+                        <div class="control__indicator"></div>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="slides">
+            <img src="{{images[activeIndex]}}" alt="Image" class="img-fluid active">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="section-title text-center mb-3 aos-init title-tour-summer-main"
+            style="font-size: 45px !important; font-weight: bold;" data-aos="fade-left"
+            >
+            Tours du lịch hè 2023</h2>
+          <p class="aos-init content-tour-summer-main" data-aos="fade-up" >Thật tuyệt vời khi giao quyền sắp xếp tour du
+            lịch và
+            kết hợp nghỉ ngơi trong thời gian gần 1
+            tháng cho SkyTour. Đặc biệt nhận được sự gần gũi, thân thiện, cảm giác như tình cảm gia đình
+            (
+            VÔ GIÁ ). Hy vọng sẽ sớm gặp lại…</p>
+        </div>
+      </div>
+      <div class="row align-items-stretch aos-init list-tour-summer-main" data-aos="fade-right" >
+        <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+          <div class="item item-search">
+            <div class="media-thumb">
+              <div class="media-text">
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                  Quốc
+                  Tử Giám - Làng Nghề Gốm Bát Tràng</p>
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
+                  xem
+                  chi tiết</a>
+              </div>
+              <img src="../../assets/images/travel-1 (4).jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="item item-search">
+            <div class="media-thumb">
+              <div class="media-text">
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                  Quốc
+                  Tử Giám - Làng Nghề Gốm Bát Tràng</p>
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
+                  xem
+                  chi tiết</a>
+              </div>
+              <img src="../../assets/images/travel-1 (3).jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+          <div class="item item-search">
+            <div class="media-thumb">
+              <div class="media-text">
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                  Quốc
+                  Tử Giám - Làng Nghề Gốm Bát Tràng</p>
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
+                  xem
+                  chi tiết</a>
+              </div>
+              <img src="../../assets/images/travel-1 (8).jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="item item-search">
+            <div class="media-thumb">
+              <div class="media-text">
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                  Quốc
+                  Tử Giám - Làng Nghề Gốm Bát Tràng</p>
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
+                  xem
+                  chi tiết</a>
+              </div>
+              <img src="../../assets/images/travel-1 (2).jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-4 feature-1-wrap d-md-flex flex-md-column order-lg-1">
+          <div class="item item-search">
+            <div class="media-thumb">
+              <div class="media-text">
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                  Quốc
+                  Tử Giám - Làng Nghề Gốm Bát Tràng</p>
+                <a href="detail" class="btn btn-success btn-tour-item btn-click-tour" >Click để
+                  xem
+                  chi tiết</a>
+              </div>
+              <img src="../../assets/images/travel-1 (7).jpg" alt="Image" class="img-tour-item">
+            </div>
+          </div>
+
+          <div class="item item-search">
+            <div class="media-thumb">
+              <div class="media-text">
+                <h3  class="h3-media"><i class="fa-solid fa-money-bill"></i> Vé giá 300k</h3>
+                <p class=" p-location"><i class="fa-solid fa-location-dot"></i> Thái Bình - Lăng Bác -
+                  Quốc
+                  Tử Giám - Làng Nghề Gốm Bát Tràng</p>
+                <a href="#" class="btn btn-success btn-tour-item btn-click-tour" >Click để
+                  xem
+                  chi tiết</a>
+              </div>
+              <img src=".../../assets/images/travel-1 (6).jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="untree_co-section count-numbers py-5">
+    <div class="container">
+      <div class="row" style="text-align: center;">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="counter-wrap">
+            <div class="counter">
+              <span class="" data-number="7313">7313</span>
+            </div>
+            <span class="caption">Chuyến đi</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="counter-wrap">
+            <div class="counter">
+              <span class="" data-number="8492">8492</span>
+            </div>
+            <span class="caption">Lượt khách</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="counter-wrap">
+            <div class="counter">
+              <span class="" data-number="100">100</span>
+            </div>
+            <span class="caption">Hướng dẫn viên chuyên nghiệp </span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+          <div class="counter-wrap">
+            <div class="counter">
+              <span class="" data-number="120">120</span>
+            </div>
+            <span class="caption">Tour có sẵn</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div >
+    <div class="container">
+      <div class="row text-center justify-content-center mb-5">
+        <div class="col-lg-7">
+          <h2 class="section-title text-center mb-3"
+            style="font-size: 45px !important; font-weight: bold;" data-aos="fade-left"
+            >Điểm đến yêu thích</h2>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-around; grid-gap: 32px;">
+
+        <div  data-aos="fade-up" class="img-category" >
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+            <h3 class="tour-name tour-name-h3">Du lịch Phú Quốc</h3>
+              <span class="location">Phú Quốc</span>
+            </div>
+            <img src="../assets/images/hero-slider-1.jpg" alt="Image" class="img-love">
+          </a>
+        </div>
+
+        <div  data-aos="fade-up" class="img-category" >
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Hà Nội</h3>
+              <span class="location">Hà Nội</span>
+            </div>
+            <img src="../assets/images/hero-slider-2.jpg" alt="Image" class="img-love">
+          </a>
+        </div>
+
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lich Hội An</h3>
+              <span class="location">Quảng Nam</span>
+            </div>
+            <img src="../assets/images/hero-slider-3.jpg" alt="Image" class="img-love">
+          </a>
+        </div>
+
+
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Nha Trang</h3>
+              <span class="location">Nha Trang</span>
+            </div>
+            <img src="../assets/images/hero-slider-4.jpg" alt="Image" class="img-love">
+          </a>
+        </div>
+
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Ninh Bình</h3>
+              <span class="location">Ninh Bình</span>
+            </div>
+            <img src="../assets/images/hero-slider-5.jpg" alt="Image" class="img-love">
+          </a>
+        </div>
+
+        <div  data-aos="fade-up" class="img-category">
+          <a class="div-a-hover" href="category">
+            <div class="media-text  div-background-drak">
+              <h3 class="tour-name tour-name-h3">Du lịch Đà Nẵng</h3>
+              <span class="location">Đà Nẵng</span>
+            </div>
+            <img src="../../assets/images/hero-slider-6.jpg.jpg" alt="Image" class="img-love">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-6">
+          <h2 class="section-title text-center mb-3"
+            style="font-weight: bold; font-size: 45px !important;" data-aos="fade-right"
+            >Ưu đãi đặc biệt &amp; Giảm giá</h2>
+          <p>Các tour đến tham qun du lịch Hà Nội, Nha Trang, Phú Quốc cho mùa hè này</p>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-right"
+      >
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="../../assets/images/travel22 (4).jpg" alt="Image"
+                class="img-fluid"></a>
+            <span class="d-flex align-items-center loc mb-2">
+              <span class="icon-room mr-3"></span>
+              <span>Hà Nội</span>
+            </span>
+            <div class="d-flex align-items-center">
+              <div>
+                <h3><a href="#">Lăng Bác</a></h3>
+                <div class="price ml-auto">
+                  <span>-20%</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="../../assets/images/traveling (9).jpg" alt="Image"
+                class="img-fluid"></a>
+            <span class="d-flex align-items-center loc mb-2">
+              <span class="icon-room mr-3"></span>
+              <span>Hà Nội</span>
+            </span>
+            <div class="d-flex align-items-center">
+              <div>
+                <h3><a href="#">Hồ Gươm</a></h3>
+                <div class="price ml-auto">
+                  <span>-10%</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="../../assets/images/traveling (10).jpg" alt="Image"
+                class="img-fluid"></a>
+            <span class="d-flex align-items-center loc mb-2">
+              <span class="icon-room mr-3"></span>
+              <span>Quảng Nam</span>
+            </span>
+            <div class="d-flex align-items-center">
+              <div>
+                <h3><a href="#">Phố cổ Hội An</a></h3>
+                <div class="price ml-auto">
+                  <span>-30%</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="media-1">
+            <a href="#" class="d-block mb-3"><img src="../../assets/images/travel22 (3).jpg" alt="Image"
+                class="img-fluid"></a>
+
+            <span class="d-flex align-items-center loc mb-2">
+              <span class="icon-room mr-3"></span>
+              <span>Kiên Giang</span>
+            </span>
+
+            <div class="d-flex align-items-center">
+              <div>
+                <h3><a href="#">Phú Quốc</a></h3>
+                <div class="price ml-auto">
+                  <span>giảm 100k cho mỗi vé</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="untree_co-section testimonial-section mt-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <h2 class="section-title text-center mb-5">Phản hồi</h2>
+
+          <div class="">
+            <div class="testimonial mx-auto">
+              <figure class="img-wrap">
+                <img src="../assets/images/person_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <h3 class="name">Nguyễn Quỳnh Anh</h3>
+              <blockquote>
+                <p>&ldquo;Tôi đã tham gia một chuyến du lịch ở Việt Nam cùng với đoàn của công ty du
+                  lịch ABC. Tôi rất hài lòng với dịch vụ tour vì các hướng dẫn viên rất chuyên
+                  nghiệp
+                  và thân thiện. Họ đã giúp tôi và đoàn của tôi khám phá những địa điểm đẹp và thú
+                  vị
+                  nhất của Việt Nam.&rdquo;</p>
+              </blockquote>
+            </div>
+
+            <div class="testimonial mx-auto">
+              <figure class="img-wrap">
+                <img src="../assets/images/person_3.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <h3 class="name">Nguyễn Quốc Anh</h3>
+              <blockquote>
+                <p>&ldquo;Tôi cảm thấy rất an tâm vì họ đã giải đáp cho tôi mọi thắc mắc và đưa ra
+                  những
+                  lời khuyên hữu ích. Không chỉ vậy, các hoạt động và trải nghiệm cũng rất thú vị
+                  và
+                  đáng nhớ. Tôi sẽ chắc chắn giới thiệu dịch vụ cho bạn bè và người thân của mình
+                  nếu
+                  họ muốn thăm Việt Nam.&rdquo;</p>
+              </blockquote>
+            </div>
+
+            <div class="testimonial mx-auto">
+              <figure class="img-wrap">
+                <img src="../assets/images/person_4.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <h3 class="name">Nguyễn Quỳnh Anh</h3>
+              <blockquote>
+                <p>&ldquo;Là một hướng dẫn viên, tôi sẽ luôn sẵn sàng giúp các bạn trả lời mọi thắc
+                  mắc
+                  và đưa ra những lời khuyên hữu ích để chuyến du lịch của các bạn trở nên thật
+                  tuyệt
+                  vời.&rdquo;</p>
+              </blockquote>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="untree_co-section">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+
+        <div class="col-lg-6">
+          <figure class="img-play-video">
+            <a id="play-video" class="video-play-button"
+              href="https://www.youtube.com/watch?v=Au6LqK1UH8g" data-fancybox>
+              <span></span>
+            </a>
+            <img src="../assets/images/hero-slider-2.jpg" alt="Image" class="img-fluid rounded-20">
+          </figure>
+        </div>
+
+        <div class="col-lg-5">
+          <h2 class="section-title text-left mb-4" style="font-weight: bold; font-size: 40px !important;"
+            data-aos="fade-right" >Hành trình cùng SkyTour</h2>
+          <p data-aos="fade-up" >Du lịch Việt Nam là một hành trình thú vị và đầy khám phá. Với những nét đẹp tự nhiên hùng
+            vĩ,
+            văn hóa đa dạng và những trải nghiệm độc đáo, Việt Nam đã trở thành một điểm đến hấp dẫn cho
+            các
+            du khách từ khắp nơi trên thế giới. Để có một chuyến du lịch tuyệt vời, các hướng dẫn viên
+            chuyên nghiệp sẽ giúp bạn khám phá và tìm hiểu tất cả những điều thú vị mà đất nước Việt Nam
+            mang lại.</p>
+
+          <p data-aos="fade-up"  class="mb-4">Ngoài ra, các hướng dẫn viên của SkyTour còn giúp bạn giải đáp các thắc mắc và
+            đưa
+            ra những lời khuyên hữu ích về an toàn và các quy định địa phương. Họ cũng sẽ giúp bạn đàm
+            phán
+            với các nhà cung cấp dịch vụ và giải quyết các vấn đề nếu có.</p>
+
+          <ul data-aos="fade-up"  class="list-unstyled two-col clearfix">
+            <li>Hoạt động giải trí ngoài trời</li>
+            <li>Hãng hàng không</li>
+            <li>Cho thuê ô tô</li>
+            <li>Du thuyền</li>
+            <li>Khách sạn</li>
+            <li>Đường sắt</li>
+            <li>Travel Insurance</li>
+            <li>Gói du lịch</li>
+            <li>Bảo hiểm</li>
+            <li>Sách hướng dẫn</li>
+          </ul>
+
+          <p data-aos="fade-up" ><a href="#" class="btn btn-primary">Bắt đầu</a></p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- lienhengay -->
+  <div class="py-5 cta-section">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h2 class="mb-2 text-white">Liên lạc với chúng tôi ngay</h2>
+          <p class="mb-4 lead text-white text-white-opacity">Cho phép bạn khám phá những gì tốt nhất.</p>
+          <p class="mb-0"><a href="contact"
+              class="btn btn-outline-white text-white btn-md font-weight-bold">Liên hệ</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /lienhengay -->
+  <!-- footer -->
+  <div class="site-footer">
+    <div class="inner first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="heading" style="font-size: 30px; font-weight: bold;">SkyTour</h3>
+              <p>Công ty được sự bảo hộ của nhà nước và được cấp phép kinh doanh online. ® SkyTour nay
+                là
+                thương hiệu mới của Tour Cafe</p>
+            </div>
+            <div class="widget">
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                <li><a href="#"><span class="icon-apple"></span></a></li>
+                <li><a href="#"><span class="icon-google"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="heading">Chính sách</h3>
+              <ul class="links list-unstyled">
+                <li><a href="#" style="color: #777;">Chính sách bảo hành & đổi trả dịch vụ</a></li>
+                <li><a href="#" style="color: #777;">Chính sách vận chuyển giao nhận</a></li>
+                <li><a href="#" style="color: #777;">Chính sách về bảo mật thông tin</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 pl-lg-5">
+            <div class="widget">
+              <h3 class="heading">Hỗ trợ khách hàng</h3>
+              <ul class="links list-unstyled">
+                <li><a href="#" style="color: #777;">Giới thiệu</a></li>
+                <li><a href="#" style="color: #777;">Tin tức</a></li>
+                <li><a href="#" style="color: #777;">Hướng dẫn đăng ký</a></li>
+                <li><a href="#" style="color: #777;">Chính sách & Quy định chung</a></li>
+                <li><a href="#" style="color: #777;">Hình thức thanh toán</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="widget">
+              <h3 class="heading">Thông tin liên hệ</h3>
+              <ul class="list-unstyled quick-info links">
+                <li class="email">
+                  <p>hquanganh123@gmail.com</p>
+                </li>
+                <li class="phone">
+                  <p>039 2720 312</p>
+                </li>
+                <li class="address">
+                  <p>Trung tâm Hà Nội</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="inner dark">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+            <p>Bản quyền &copy;
+              <script>document.write(new Date().getFullYear());</script>. Đã đăng ký bản quyền.
+              &mdash;
+              Thiết kế bởi <a href="https://www.facebook.com/quang.sam.777/" class="link-highlight">Ca
+                sĩ
+                Quang Anh</a>
+              <!-- License information: https://untree.co/license/ --> Phân phối bởi <a
+                href="https://www.facebook.com/quang.sam.777/" target="_blank">Q&A</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /footer -->
+
+  <!-- <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</div> -->
+
+<script src="../assets/js/aos.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/owl.carousel.min.js"></script>
+<script src="../assets/js/jquery.animateNumber.min.js"></script>
+<script src="../assets/js/jquery.waypoints.min.js"></script>
+<script src="../assets/js/jquery.fancybox.min.js"></script>
+<script src="../assets/js/moment.min.js"></script>
+<script src="../assets/js/daterangepicker.js"></script>
+<script src="../assets/js/typed.js"></script>
+
+<script>
+  console.log('hi');
+  $(function () {
+    console.log('hi');
+    var slides = $('.slides'),
+      images = slides.find('img');
+
+    images.each(function (i) {
+      $(this).attr('data-id', i + 1);
+    })
+
+    var typed = new Typed('.typed-words', {
+      strings: [" Hà Nội.", " Vịnh Hạ Long.", " Ninh Bình.", " SaPa.", " Đông Tây Bắc."],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true,
+      preStringTyped: (arrayPos, self) => {
+        arrayPos++;
+        console.log(arrayPos);
+        $('.slides img').removeClass('active');
+        $('.slides img[data-id="' + arrayPos + '"]').addClass('active');
+      }
+
+    });
+  })
+  // lấy giá trị list tour sang input
+  var container = document.querySelector('.container-list');
+  var myInput = document.querySelector('#search-tour');
+
+  container.addEventListener('click', function (event) {
+    if (event.target.classList.contains('clickable')) {
+      var value = event.target.textContent;
+      myInput.value = value;
+    }
+  });
+  // lấy giá trị list tour sang input
+
+  // đóng collaspe
+  var containerCha = document.querySelector('#myContainer');
+  var collapses = document.querySelectorAll('.collapse');
+
+  containerCha.addEventListener('click', function(event) {
+    collapses.forEach(function(collapse) {
+    if (event.target != collapse && !collapse.contains(event.target)) {
+        collapse.classList.remove('show');
+    }
+    });
+  });
+  // đóng collaspe
+
+</script>
+
+<!-- <script src="../assets/js/custom.js"></script> -->
+<script>
+  const box = document.querySelector('.title-tour-sale-main');
+  const boxTwo = document.querySelector('.content-tour-sale-main');
+  const boxThree = document.querySelector('.title-tour-summer-main');
+  const boxFour = document.querySelector('.content-tour-summer-main');
+  const boxFive = document.querySelector('.list-tour-summer-main');
+
+  window.addEventListener('scroll', () => {
+    const boxTop = box.getBoundingClientRect().top;
+    const boxTwoTop = boxTwo.getBoundingClientRect().top;
+    const boxThreeTop = boxThree.getBoundingClientRect().top;
+    const boxFourTop = boxFour.getBoundingClientRect().top;
+    const boxFiveTop = boxFour.getBoundingClientRect().top;
+    // const boxBottom = box.getBoundingClientRect().bottom;
+
+    if (boxTop < window.innerHeight - 100) {
+      box.classList.add('aos-animate');
+    } else {
+      box.classList.remove('aos-animate');
+    }
+    if (boxTwoTop < window.innerHeight - 80) {
+      boxTwo.classList.add('aos-animate');
+    } else {
+      boxTwo.classList.remove('aos-animate');
+    }
+    if (boxThreeTop < window.innerHeight - 100) {
+      boxThree.classList.add('aos-animate');
+    } else {
+      boxThree.classList.remove('aos-animate');
+    }
+    if (boxFourTop < window.innerHeight - 100) {
+      boxFour.classList.add('aos-animate');
+    } else {
+      boxFour.classList.remove('aos-animate');
+    }
+    if (boxFiveTop < window.innerHeight - 100) {
+      boxFive.classList.add('aos-animate');
+    } else {
+      boxFive.classList.remove('aos-animate');
+    }
+  });
+</script>
